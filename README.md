@@ -70,6 +70,18 @@
 
 ![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
 
+
+
+### self-driving (clone-coding)
+> **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
+
+* **핵심 경험**: js를 통하여 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, fps 업데이트 주기에에 따른 실시간 비쥬얼 변경 요소 구현
+* **Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/)
+  
+![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
+
+
+
 ###  Featured Project: UnJ (언제) w.claude
 > **"복잡한 약속 시간을 한눈에, 드래그 기반 일정 조율 플랫폼"**
 
@@ -84,17 +96,20 @@
 
 
 
+(문서 추가 예정)
+last chance : 유니티 기반 2d 진영기반 뱀서 게임 구현  
+그리디-doogoodoogoo :세종대 일정 정리 및 ics를 통한 캘린더 일정등록 자동화 서비스
+그리디-미션: 숫자야구/매뉴판/뉴스뷰어/투두리스트 +그리디콘
+
+---
+
+### 🛣️LoadMap
+
+---
+
+
+
+
 * **ESP32 & Linux Server**: e-Ink 디스플레이를 활용한 개인용 대시보드 구축
 (진행중) 맥북에서 리녹스 서버를 구축하여 esp로 Manna웹 비쥬얼 렌더링 및 외부장비로 조작 구현예정
 최종적으로, 어느 디스플레이에서도 esp칩만 있으면 manna웹 갤러리처럼 구현할 예정
-
-
-
-### self-driving (clone-coding)
-> **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
-
-* **핵심 경험**: js를 통하여 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, fps 업데이트 주기에에 따른 실시간 비쥬얼 변경 요소 구현
-* **Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/)
-  
-![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
-
