@@ -87,3 +87,14 @@
 * **ESP32 & Linux Server**: e-Ink 디스플레이를 활용한 개인용 대시보드 구축
 (진행중) 맥북에서 리녹스 서버를 구축하여 esp로 Manna웹 비쥬얼 렌더링 및 외부장비로 조작 구현예정
 최종적으로, 어느 디스플레이에서도 esp칩만 있으면 manna웹 갤러리처럼 구현할 예정
+
+
+
+### self-driving (clone-coding)
+> **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
+
+* **핵심 경험**: js를 통하여 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, fps 업데이트 주기에에 따른 실시간 비쥬얼 변경 요소 구현
+* **Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/)
+  
+![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
+
