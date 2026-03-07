@@ -53,5 +53,25 @@
 ---
 
 ### 🔭 Currently Working on
+
+---
+
 * **Bible Web App**: 성경 읽기 최적화 및 사용자 경험 개선 프로젝트
+
+### 🚀 Featured Project: Manna (만나)
+> **"성경 읽기의 진입 장벽을 낮춘 릴스 스타일 PWA"**
+
+* **핵심 경험**: 인스타그램 릴스처럼 **세로 스와이프**로 한 구절씩 음미하며 읽는 새로운 UX 제공
+* **엔지니어링 하이라이트**:
+  * **Zero-Lag 인터랙션**: 439줄의 순수 JS로 iOS Safari 시스템 제스처를 제어하여 네이티브 앱 수준의 조작감 구현
+  * **데이터 최적화**: 번역본/언어에 따른 전역 UID 시스템 적용 및 Batch API 구축으로 데이터 로딩 효율
+  * **아키텍처**: Feature-based 구조와 8개 도메인 스토어로 여러 상태를 체계적 관리
+* **Live Demo**: [https://manna-bible.netlify.app/](https://manna-bible.netlify.app/)
+
+![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
+
+
+
+
+
 * **ESP32 & Linux Server**: e-Ink 디스플레이를 활용한 개인용 대시보드 구축
