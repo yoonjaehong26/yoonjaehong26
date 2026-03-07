@@ -58,7 +58,7 @@
 
 * **Bible Web App**: 성경 읽기 최적화 및 사용자 경험 개선 프로젝트
 
-### 🚀 Featured Project: Manna (만나)
+###  Featured Project: Manna (만나)
 > **"성경 읽기의 진입 장벽을 낮춘 릴스 스타일 PWA"**
 
 * **핵심 경험**: 인스타그램 릴스처럼 **세로 스와이프**로 한 구절씩 음미하며 읽는 새로운 UX 제공
@@ -70,8 +70,20 @@
 
 ![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
 
+###  Featured Project: UnJ (언제) w.claude
+> **"복잡한 약속 시간을 한눈에, 드래그 기반 일정 조율 플랫폼"**
 
+* **핵심 경험**: 30분 단위 그리드 드래그 인터랙션을 통해 다수의 참여자가 가능한 시간을 시각적으로 집계
+* **엔지니어링 하이라이트**:
+  * **Interactive Grid**: 마우스/터치 드래그 인덱스 계산 알고리즘을 통한 다중 슬롯 일괄 선택 구현
+  * **Heatmap Logic**: 참여 인원 및 상태(가능/조정가능)에 따른 투명도/분할 그라데이션 동적 렌더링 로직 설계
+  * **Optimization**: 500ms 디바운스 및 `sendBeacon`을 활용한 안정적인 가용시간 자동 저장 시스템 구축
+* **Live Demo**: [https://un-j.vercel.app/](https://un-j.vercel.app/)
+  
+![화면 기록 2026-03-07 오후 4 59 27](https://github.com/user-attachments/assets/d5392223-9994-4707-a9ab-3a99336e2ce0)
 
 
 
 * **ESP32 & Linux Server**: e-Ink 디스플레이를 활용한 개인용 대시보드 구축
+(진행중) 맥북에서 리녹스 서버를 구축하여 esp로 Manna웹 비쥬얼 렌더링 및 외부장비로 조작 구현예정
+최종적으로, 어느 디스플레이에서도 esp칩만 있으면 manna웹 갤러리처럼 구현할 예정
