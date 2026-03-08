@@ -90,7 +90,7 @@
   * **Interactive Grid**: 마우스/터치 드래그 인덱스 계산 알고리즘을 통한 다중 슬롯 일괄 선택 구현
   * **Heatmap Logic**: 참여 인원 및 상태(가능/조정가능)에 따른 투명도/분할 그라데이션 동적 렌더링 로직 설계
   * **Optimization**: 500ms 디바운스 및 `sendBeacon`을 활용한 안정적인 가용시간 자동 저장 시스템 구축
-* **Live Demo**: [unj.kr](unj.kr)
+* **Live Demo**: [https://unj.kr/](https://unj.kr/)
   
 ![화면 기록 2026-03-07 오후 4 59 27](https://github.com/user-attachments/assets/d5392223-9994-4707-a9ab-3a99336e2ce0)
 
