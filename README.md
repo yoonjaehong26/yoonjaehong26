@@ -96,11 +96,25 @@
 
 
 
-(문서 추가 예정)
-last chance : 유니티 기반 2d 진영기반 뱀서 게임 구현  
+
+###  Last Chance 
+> **"유니티 2d 진영기반 뱀서 게임 구현"**
+
+* **핵심 경험**: 수업 팀 프로젝트로 4개월간 유니티로 게임을 제작
+* **엔지니어링 하이라이트**:
+  * **독창적인 게임 시스템 설계**: 다른게임들과의 차별성을 위한 뱀서라이크 + 진영시스템 + AOS식 플레이어조작을 조화롭게 융합하여 새로운 게임 장르 융합
+  * **unity Tag**: 아군/상대진영을 tag시스템으로 분류하여 기존의 로그라이크에 진영시스템 부여
+  * **물리엔진 최적화**: 200 + 1 vs 200 의 대규모 전투를 위한 (충돌,거리)물리엔진, 렌더링 최적화
+  * **Plat Demo**: [게임 발표 자료](https://sejonguniversity-my.sharepoint.com/:p:/r/personal/23011810_sju_ac_kr/Documents/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%201.pptx?d=w478a9b0fe7564f9d8258998b7de3bc15&csf=1&web=1&e=B0O4xA)
+* **Plat Demo**: [플레이 영상](https://drive.google.com/drive/folders/1x_EcGXgb-4HY_vahjJP4I5gNfEsXRbU4)
+  
+![화면 기록 2026-03-09 오후 9 37 32](https://github.com/user-attachments/assets/dab7f1fc-d3a1-485e-ab0b-1dd4ed7e23c3)
+
+
+
 그리디-doogoodoogoo :세종대 일정 정리 및 ics를 통한 캘린더 일정등록 자동화 서비스
 그리디-미션: 숫자야구/매뉴판/뉴스뷰어/투두리스트 +그리디콘
-
+(문서 추가 예정)
 ---
 
 ### 🛣️LoadMap
