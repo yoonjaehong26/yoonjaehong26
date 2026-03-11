@@ -72,15 +72,6 @@
 
 
 
-### self-driving (clone-coding)
-> **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
-
-* **핵심 경험**: js를 통하여 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, fps 업데이트 주기에에 따른 실시간 비쥬얼 변경 요소 구현
-* **Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/)
-  
-![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
-
-
 
 ###  Featured Project: UnJ (언제) w.claude
 > **"복잡한 약속 시간을 한눈에, 드래그 기반 일정 조율 플랫폼"**
@@ -104,11 +95,27 @@
 * **엔지니어링 하이라이트**:
   * **독창적인 게임 시스템 설계**: 다른게임들과의 차별성을 위한 뱀서라이크 + 진영시스템 + AOS식 플레이어조작을 조화롭게 융합하여 새로운 게임 장르 융합
   * **unity Tag**: 아군/상대진영을 tag시스템으로 분류하여 기존의 로그라이크에 진영시스템 부여
-  * **물리엔진 최적화**: 200 + 1 vs 200 의 대규모 전투를 위한 (충돌,거리)물리엔진, 렌더링 최적화
+  * **물리엔진 최적화**: 아군-200 + 1 vs 적군-200 x 3 의 대규모 전투를 위한 (충돌,거리)물리엔진, 렌더링 최적화
   * **Plat Demo**: [게임 발표 자료](https://sejonguniversity-my.sharepoint.com/:p:/r/personal/23011810_sju_ac_kr/Documents/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%201.pptx?d=w478a9b0fe7564f9d8258998b7de3bc15&csf=1&web=1&e=B0O4xA)
 * **Plat Demo**: [플레이 영상](https://drive.google.com/drive/folders/1x_EcGXgb-4HY_vahjJP4I5gNfEsXRbU4)
   
 ![화면 기록 2026-03-09 오후 9 37 32](https://github.com/user-attachments/assets/dab7f1fc-d3a1-485e-ab0b-1dd4ed7e23c3)
+
+
+
+
+
+### self-driving (clone-coding)
+> **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
+
+* **핵심 경험**: js를 통하여 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, fps 업데이트 주기에에 따른 실시간 비쥬얼 변경 요소 구현
+* **Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/)
+  
+![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
+
+
+
+
 
 ###  endCard (서버 내린상태라 오라클 가입 후 베포 예정)
 > **"에빙하우스의 망각 곡선에 따른 복습시스템을 이용한 ai 예제기반 영어단어 암기 웹사이트"**
