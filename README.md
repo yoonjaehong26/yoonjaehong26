@@ -66,7 +66,7 @@
   * **Zero-Lag 인터랙션**: 439줄의 순수 JS로 iOS Safari 시스템 제스처를 제어하여 네이티브 앱 수준의 조작감 구현
   * **데이터 최적화**: 번역본/언어에 따른 전역 UID 시스템 적용 및 Batch API 구축으로 데이터 로딩 효율
   * **아키텍처**: Feature-based 구조와 8개 도메인 스토어로 여러 상태를 체계적 관리
-* **Live Demo**: [https://manna-bible.netlify.app/](https://manna-bible.netlify.app/)
+* **Live Demo**: [https://manna-mu.vercel.app/](https://manna-mu.vercel.app/)
 
 ![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
 
