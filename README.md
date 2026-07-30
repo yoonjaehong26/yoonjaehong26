@@ -60,7 +60,9 @@
 > **"성경 읽기의 진입 장벽을 낮춘 릴스 스타일 PWA"**
 
 **왜 만들었나**: 성경 통독에 도전한 사람들이 중도 포기하는 가장 큰 이유는 "한 번에 읽어야 할 분량이 너무 많다"는 부담감 — 과자를 한 입씩 먹듯, 장 단위 대신 한 구절씩 스와이프하며 음미하는 릴스형 UX로 진입 장벽을 낮춤
+
 **핵심 경험**: 인스타그램 릴스처럼 **세로 스와이프**로 한 구절씩 음미하며 읽는 새로운 UX 제공
+
 **Live Demo**: [https://manna-mu.vercel.app/](https://manna-mu.vercel.app/)
 
 ![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
@@ -81,10 +83,34 @@
 
 ---
 
+### react-render-board `Open Source · Dev Tool`
+> **"React 앱의 실시간 렌더 구조를 한눈에 보여주는 오픈소스 개발자 도구"**
+
+**왜 만들었나**: 기존 React DevTools는 목록 형태라 전체 구조가 한눈에 안 들어오고, 다른 시각화 도구들은 실제 화면 구조 대신 파일 import 관계만 보여줘서 실제와 다르게 그려져요. "지금 실제로 화면에 그려지고 있는 구조"를 그대로 보여주는 도구가 없다는 걸 발견하고 직접 만들었어요.
+
+**핵심 경험**: 리서치·설계·구현 전 과정을 75개의 의사결정 기록(ADR)으로 남기며 진행했고, npm에 실제로 배포해 누구나 설치할 수 있는 오픈소스 라이브러리로 완성했어요. 유닛 테스트 346개, 실제 오픈소스 앱 3개(excalidraw 등)로 성능 검증까지 마쳤어요.
+
+[![npm version](https://img.shields.io/npm/v/react-render-board.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-render-board) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yoonjaehong26/react-render-board)
+
+<!-- 스크린샷·데모 영상 추가 예정 -->
+
+<details>
+<summary>엔지니어링 하이라이트</summary>
+
+* **다른 개발자 도구와 안전하게 공존하게 만들었어요**: React DevTools 확장이나 react-scan 같은 다른 분석 도구가 먼저 켜져 있어도 서로 방해하지 않고 함께 동작하도록 설계했어요. 처음엔 여러 도구를 한 번에 지원하려고 욕심을 냈다가 무한 재귀로 실제 페이지가 멈추는 사고를 냈고, 원인을 정확히 찾아내 기존 동작을 보존한 채 딱 한 번만 연결하는 더 안전한 방식으로 다시 설계했어요.
+* **4가지 빌드 도구를 전부 자동으로 지원했어요**: Vite, webpack, Rspack, Next.js(Turbopack)처럼 실무에서 널리 쓰이는 빌드 도구 4종을 설치 한 줄(`npm install`)만으로 자동 연결되게 만들었어요. 도구마다 내부 동작 방식이 달라 각각 다른 연결 방법이 필요했고, 4가지 경로 전부 실제로 화면이 뜨는지 자동화 테스트로 하나하나 확인했어요.
+* **느려지는 원인을 직접 찾아 최대 28배 빠르게 개선했어요**: 컴포넌트가 5,000개까지 늘어나면 반응 속도가 최대 28배까지 느려지는 성능 문제가 있었어요. 코드를 직접 분석해서 "화면에 안 보이는 요소까지 전부 그리고 있었다"는 진짜 원인을 찾아냈고, 화면 밖 요소는 아예 그리지 않는 방식으로 바꿔서 거의 그대로(1배 수준)까지 개선했어요.
+* **배포된 버전에서 한 번도 작동한 적 없던 기능을 발견해서 고쳤어요**: 빌드 최적화 과정에서 특정 기능의 코드 전체가 통째로 사라지는 버그가 있었어요. 그래서 배포된 모든 버전에서 그 기능이 실제로는 한 번도 정상 동작한 적이 없었다는 걸 실사용 중 발견해서 수정했고, 같은 실수가 나중에 다른 파일에서 다시 발생한 것도 재발 방지 테스트를 추가해서 잡아냈어요.
+
+</details>
+
+---
+
 ### doogoodoogoo(두구두구) `Web · Team` ![최근 30일 방문자](http://152.67.211.137:3000/badge?v=2)
 > **"세종대 일정 정리 및 ics를 통한 캘린더 일정등록 자동화 서비스"**
 
 **핵심 경험**: 사용자 경험과 니즈를 고려하여 프론트 2명, 백엔드 3명과 함께 진행한 협업 프로젝트
+
 **Live Demo**: [https://doogoodoogoo.kr/](https://doogoodoogoo.kr/)
 
 ![화면 기록 2026-03-20 오후 3 45 59](https://github.com/user-attachments/assets/cd5c7f65-eec5-4568-b3d7-6837f53f56f2)
@@ -104,6 +130,7 @@
 > **"복잡한 약속 시간을 한눈에, 드래그 기반 일정 조율 플랫폼"**
 
 **핵심 경험**: 30분 단위 그리드 드래그 인터랙션을 통해 다수의 참여자가 가능한 시간을 시각적으로 집계
+
 **Live Demo**: [https://unj.kr/](https://unj.kr/)
 
 ![화면 기록 2026-03-07 오후 4 59 27](https://github.com/user-attachments/assets/d5392223-9994-4707-a9ab-3a99336e2ce0)
@@ -123,6 +150,7 @@
 > **"유니티 2D 진영기반 뱀서 게임 구현"**
 
 **핵심 경험**: 수업 팀 프로젝트로 4개월간 유니티로 게임을 제작
+
 **Plat Demo**: [게임 발표 자료](https://sejonguniversity-my.sharepoint.com/:p:/r/personal/23011810_sju_ac_kr/Documents/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%201.pptx?d=w478a9b0fe7564f9d8258998b7de3bc15&csf=1&web=1&e=B0O4xA) · [플레이 영상](https://drive.google.com/drive/folders/1x_EcGXgb-4HY_vahjJP4I5gNfEsXRbU4)
 
 ![화면 기록 2026-03-09 오후 9 37 32](https://github.com/user-attachments/assets/dab7f1fc-d3a1-485e-ab0b-1dd4ed7e23c3)
@@ -142,6 +170,7 @@
 > **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
 
 **핵심 경험**: JS로 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, FPS 업데이트 주기에 따른 실시간 비주얼 변경 요소 구현
+
 **Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/](https://resplendent-selkie-2e1e63.netlify.app/)
 
 ![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
@@ -152,6 +181,7 @@
 > **"에빙하우스의 망각 곡선에 따른 복습 시스템을 이용한 AI 예문기반 영단어 암기 웹사이트"**
 
 **핵심 경험**: 기획부터 개발, 배포까지 처음으로 혼자 완주한 첫 개인 프로젝트
+
 **Plat Demo**: [사이트 보기](http://152.67.211.137:8001/)
 
 ![화면 기록 2026-03-20 오후 3 25 21](https://github.com/user-attachments/assets/410f2b11-f6c6-48fa-bcf3-9d90b0eb5849)
@@ -163,28 +193,6 @@
 * **다양한 라이브러리 사용**: 당시 개발 지식과 경험이 없어서 도서관에서 책을 읽고 강의를 통해 배운 지식으로 EJS + JS, Express, MongoDB, CSS에 대해 알아가며 기능을 구현, AWS 배포까지 경험
 * **로그인 기능 구현**: session을 바탕으로 로그인 기능 구현
 * **Gemini API 활용**: API를 활용하여 프롬프트에 따른 예문을 호출
-
-</details>
-
----
-
-### react-render-board `Open Source · Dev Tool`
-> **"React 앱의 실시간 렌더 구조를 한눈에 보여주는 오픈소스 개발자 도구"**
-
-**왜 만들었나**: 기존 React DevTools는 목록 형태라 전체 구조가 한눈에 안 들어오고, 다른 시각화 도구들은 실제 화면 구조 대신 파일 import 관계만 보여줘 실제와 다르게 그려짐 — "지금 실제로 화면에 그려지고 있는 구조"를 그대로 보여주는 도구가 없다는 걸 발견하고 직접 만듦
-**핵심 경험**: npm에 실제로 배포되어 누구나 설치해 쓸 수 있는 오픈소스 라이브러리, Vite·webpack·Rspack·Next.js 4가지 빌드 도구 자동 지원
-**npm**: [react-render-board](https://www.npmjs.com/package/react-render-board)
-**GitHub**: [yoonjaehong26/react-render-board](https://github.com/yoonjaehong26/react-render-board)
-
-<!-- 스크린샷·데모 영상 추가 예정 -->
-
-<details>
-<summary>엔지니어링 하이라이트</summary>
-
-* **다른 개발자 도구와 안전하게 공존**: React DevTools 확장이나 다른 분석 도구가 먼저 켜져 있어도 서로 방해하지 않고 함께 동작하도록 설계. 처음엔 욕심내다 페이지가 멈추는 사고를 겪었고, 원인을 찾아 안전한 방식으로 다시 설계함
-* **4가지 빌드 도구 자동 지원**: Vite, webpack, Rspack, Next.js(Turbopack)처럼 널리 쓰이는 빌드 도구 4종을 설치 한 줄로 자동 연결되게 만들고, 실제로 화면이 뜨는지 하나하나 자동 테스트로 확인
-* **원인을 찾아 28배 빠르게 개선**: 컴포넌트가 5,000개까지 늘어나면 반응 속도가 28배까지 느려지던 문제를 "화면 밖 요소는 아예 그리지 않는다"는 원칙으로 거의 그대로(1배 수준)까지 개선. 코드 프로파일링으로 진짜 원인을 직접 찾아냄
-* **배포판에서 한 번도 작동한 적 없던 기능을 발견해 고침**: 빌드 최적화 과정에서 특정 기능이 통째로 사라져, 배포된 모든 버전에서 실제로는 한 번도 동작한 적이 없었다는 걸 발견하고 수정. 같은 실수가 나중에 재발한 것도 재발 방지 테스트로 잡아냄
 
 </details>
 
