@@ -2,16 +2,16 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Software%20Engineer&fontSize=70" width="100%">
 </div>
 
-### 💫 About Me
-* 🎓 **University**: Sejong University, Software Major 
-* 🛠 **Main Focus**: Web Development (Next.js, React) & AI/ML 
-* 📟 **Current Interest**: Embedded Systems (ESP32) & Linux Server
-* 🏃 **Hobbies**: Running, Fitness, reading
-* 🤝 **Value**: Team-oriented development with strict coding conventions
+### About Me
+* **University**: Sejong University, Software Major 
+* **Main Focus**: Web Development (Next.js, React) & AI/ML 
+* **Current Interest**: Embedded Systems (ESP32) & Linux Server
+* **Hobbies**: Running, Fitness, reading
+* **Value**: Team-oriented development with strict coding conventions
 
 ---
 
-### 📊 My GitHub Contributions
+### My GitHub Contributions
 <p align="center">
   <img src="https://github-readme-stats-one-bice.vercel.app/api?username=yoonjaehong26&show_icons=true&count_private=true&theme=radical&hide_border=true" alt="Jaehong's GitHub Stats" />
   <img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=yoonjaehong26&layout=compact&theme=vision-ary-dark&hide_border=true" alt="Top Langs" />
@@ -20,39 +20,39 @@
 ---
 
 
-### 💻 Tech Stack
+### Tech Stack
 
-#### 🌐 Frontend Development
+#### Frontend Development
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-#### 🔄 State Management & Data Fetching
+#### State Management & Data Fetching
 ![Zustand](https://img.shields.io/badge/Zustand-443E38?style=for-the-badge&logo=react&logoColor=white)
 ![TanStack Query](https://img.shields.io/badge/-TanStack%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white)
 ![Context API](https://img.shields.io/badge/Context%20API-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 
-#### ⚙️ Backend & Database
+#### Backend & Database
 ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-#### 🚀 Programming Languages & Systems
+#### Programming Languages & Systems
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
-#### 🛠️ Tools & Game Dev
+#### Tools & Game Dev
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=unity&logoColor=black)
 
 ---
 
-### 🔭 Featured Projects
+### Featured Projects
 
 ---
 
@@ -71,7 +71,7 @@
 ![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
 
 <details>
-<summary><h3>🛠️ 엔지니어링 하이라이트</h3></summary>
+<summary><h3>엔지니어링 하이라이트</h3></summary>
 
 <details>
 <summary><h4>화면이 갑자기 하얗게 죽어버렸는데, 범인은 유튜브였어요</h4></summary>
@@ -302,12 +302,43 @@
 <!-- 스크린샷·데모 영상 추가 예정 -->
 
 <details>
-<summary>엔지니어링 하이라이트</summary>
+<summary><h3>엔지니어링 하이라이트</h3></summary>
 
-* **다른 개발자 도구와 안전하게 공존하게 만들었어요**: React DevTools 확장이나 react-scan 같은 다른 분석 도구가 먼저 켜져 있어도 서로 방해하지 않고 함께 동작하도록 설계했어요. 처음엔 여러 도구를 한 번에 지원하려고 욕심을 냈다가 무한 재귀로 실제 페이지가 멈추는 사고를 냈고, 원인을 정확히 찾아내 기존 동작을 보존한 채 딱 한 번만 연결하는 더 안전한 방식으로 다시 설계했어요.
-* **4가지 빌드 도구를 전부 자동으로 지원했어요**: Vite, webpack, Rspack, Next.js(Turbopack)처럼 실무에서 널리 쓰이는 빌드 도구 4종을 설치 한 줄(`npm install`)만으로 자동 연결되게 만들었어요. 도구마다 내부 동작 방식이 달라 각각 다른 연결 방법이 필요했고, 4가지 경로 전부 실제로 화면이 뜨는지 자동화 테스트로 하나하나 확인했어요.
-* **느려지는 원인을 직접 찾아 최대 28배 빠르게 개선했어요**: 컴포넌트가 5,000개까지 늘어나면 반응 속도가 최대 28배까지 느려지는 성능 문제가 있었어요. 코드를 직접 분석해서 "화면에 안 보이는 요소까지 전부 그리고 있었다"는 진짜 원인을 찾아냈고, 화면 밖 요소는 아예 그리지 않는 방식으로 바꿔서 거의 그대로(1배 수준)까지 개선했어요.
-* **배포된 버전에서 한 번도 작동한 적 없던 기능을 발견해서 고쳤어요**: 빌드 최적화 과정에서 특정 기능의 코드 전체가 통째로 사라지는 버그가 있었어요. 그래서 배포된 모든 버전에서 그 기능이 실제로는 한 번도 정상 동작한 적이 없었다는 걸 실사용 중 발견해서 수정했고, 같은 실수가 나중에 다른 파일에서 다시 발생한 것도 재발 방지 테스트를 추가해서 잡아냈어요.
+<details>
+<summary><h4>다른 개발자 도구랑 같이 켜놨다가 페이지를 통째로 멈춘 적이 있어요</h4></summary>
+
+> **문제**: React DevTools 확장이나 react-scan처럼 이미 훅을 쓰고 있는 다른 분석 도구와 함께 켜도 서로 방해하지 않게 만들려고 했는데, 실제로 두 번 다른 방식으로 문제가 터졌어요. 먼저 `onCommitFiberRoot`를 여러 리스너가 동시에 걸릴 수 있는 getter/setter 구조로 바꿔서 react-scan과 완전히 공존시키려 했는데, 실사용 중 무한 재귀로 페이지가 완전히 멈추는 사고가 났어요. 원인은 "현재 dispatch 함수를 캡처해서 감싸 재대입"하는 흔한 패턴을 쓰면, 그 래퍼 자신이 리스너 목록에 다시 등록돼서 dispatch가 자기 자신을 다시 부르는 무한 루프가 만들어진다는 거였어요.
+
+> 이후 실사용자가 직접 원인까지 규명해서 제보한 두 번째 문제도 있었어요. 브라우저 확장(React DevTools/Scan)은 `document_start` 시점에 페이지의 `<head>` 스크립트보다도 먼저 자기 훅을 심어버려서, "훅이 없을 때만 우리 훅을 설치한다"는 조건이 항상 거짓이 됐어요. 그 결과 Next.js처럼 하이드레이션이 런타임 부팅보다 먼저 끝나는 환경에서는 커밋을 하나도 못 잡고 노드가 영구히 0개로 보이는 문제가 있었어요.
+
+> **해결**: 무한 재귀 사고가 난 직후엔 즉시 되돌렸어요 — 실사용 프로젝트에 건 핫픽스와 라이브러리 소스 코드 수정을 같은 시점에 짝지어야 한다는 교훈도 남겼고요(따로 고치다 소스 쪽 위험한 코드를 놓칠 뻔했거든요). 다중 리스너라는 욕심을 버리고 안전한 단일 슬롯 구조로 돌아갔어요.
+
+> 두 번째 문제는 기존 훅이 있어도 무시하지 않고, `onCommitFiberRoot`를 "원본을 보존한 채 딱 한 번만 재할당"하는 방식으로 고쳤어요. 중복 방지 플래그를 두고, 우리 로직이 끝나면 원본 핸들러를 그대로 이어 호출해서 확장의 기능도 그대로 살아있게 했어요. 첫 번째 사고와 다른 점은, 여러 리스너를 관리하는 getter/setter 구조가 아니라 함수 프로퍼티 하나를 안전하게 딱 한 번 감싸는 것뿐이라 애초에 재귀할 여지가 없다는 거예요. 검증은 Playwright로 "확장이 먼저 훅을 심어놓은 상황"을 흉내 내서(가짜 훅을 `document_start`에 미리 주입), 보드가 정상적으로 노드를 그리고 원본 훅도 그대로 체이닝되는지까지 자동화 테스트로 확인했어요.
+
+> **결과**: 다른 devtools 도구와 안전하게 공존(단, react-scan과의 완전한 양방향 공존은 무한 재귀 위험 때문에 의도적으로 보류), 확장 선점 케이스를 포함한 자동화 검증 통과.
+
+</details>
+
+<details>
+<summary><h4>4가지 빌드 도구를 전부 자동으로 지원했어요</h4></summary>
+
+* Vite, webpack, Rspack, Next.js(Turbopack)처럼 실무에서 널리 쓰이는 빌드 도구 4종을 설치 한 줄(`npm install`)만으로 자동 연결되게 만들었어요. 도구마다 내부 동작 방식이 달라 각각 다른 연결 방법이 필요했고, 4가지 경로 전부 실제로 화면이 뜨는지 자동화 테스트로 하나하나 확인했어요.
+
+</details>
+
+<details>
+<summary><h4>느려지는 원인을 직접 찾아 최대 28배 빠르게 개선했어요</h4></summary>
+
+* 컴포넌트가 5,000개까지 늘어나면 반응 속도가 최대 28배까지 느려지는 성능 문제가 있었어요. 코드를 직접 분석해서 "화면에 안 보이는 요소까지 전부 그리고 있었다"는 진짜 원인을 찾아냈고, 화면 밖 요소는 아예 그리지 않는 방식으로 바꿔서 거의 그대로(1배 수준)까지 개선했어요.
+
+</details>
+
+<details>
+<summary><h4>배포된 버전에서 한 번도 작동한 적 없던 기능을 발견해서 고쳤어요</h4></summary>
+
+* 빌드 최적화 과정에서 특정 기능의 코드 전체가 통째로 사라지는 버그가 있었어요. 배포된 모든 버전에서 그 기능이 실제로는 한 번도 정상 동작한 적이 없었다는 걸 실사용 중 발견해서 수정했고, 같은 실수가 나중에 다른 파일에서 다시 발생한 것도 재발 방지 테스트를 추가해서 잡아냈어요.
+
+</details>
 
 </details>
 
@@ -316,6 +347,8 @@
 ### doogoodoogoo(두구두구) `Web · Team` ![최근 30일 방문자](http://152.67.211.137:3000/badge?v=2)
 > **"세종대 일정 정리 및 ics를 통한 캘린더 일정등록 자동화 서비스"**
 
+**왜 만들었나**: 세종대 학사 일정을 확인할 때마다 수기로 캘린더에 옮겨 적어야 하는 번거로움이 있어서, ics 파일로 캘린더에 자동 등록까지 되는 서비스를 만들었어요.
+
 **핵심 경험**: 사용자 경험과 니즈를 고려하여 프론트 2명, 백엔드 3명과 함께 진행한 협업 프로젝트
 
 **Live Demo**: [https://doogoodoogoo.kr/](https://doogoodoogoo.kr/)
@@ -323,18 +356,37 @@
 ![화면 기록 2026-03-20 오후 3 45 59](https://github.com/user-attachments/assets/cd5c7f65-eec5-4568-b3d7-6837f53f56f2)
 
 <details>
-<summary>엔지니어링 하이라이트</summary>
+<summary><h3>엔지니어링 하이라이트</h3></summary>
 
-* **기술보다는 사용자의 경험 우선 개발**: 각 개발단계에서 사용자에게 필요한 니즈에 맞추어 개발을 진행하도록 노력(디자인, 레이아웃, UI)
-* **체계화된 개발 과정 공개**: git flow 전략과 함께 공개된 오픈소스 환경에서 중간 개발요소를 커밋 단위로 문서화
-* **팀 활동**: swagger를 통한 API 명세와 함께 프로젝트 아이디어 도출부터 배포까지 전 과정을 팀과 함께 개발
+<details>
+<summary><h4>기능 구현보다 먼저 확인한 게 있어요</h4></summary>
+
+> 각 개발 단계에서 디자인·레이아웃·UI를 기술적 구현보다 먼저 사용자 니즈에 맞추는 것을 우선순위로 뒀어요.
+
+</details>
+
+<details>
+<summary><h4>중간 개발 과정 자체를 커밋 단위로 남겼어요</h4></summary>
+
+> git flow 전략을 따르면서, 공개된 오픈소스 저장소에 중간 개발 요소를 커밋 단위로 문서화했어요.
+
+</details>
+
+<details>
+<summary><h4>프론트 2명·백엔드 3명, API 명세부터 맞추고 시작했어요</h4></summary>
+
+> swagger로 API 명세를 정리하고, 아이디어 도출부터 배포까지 전 과정을 팀과 함께 진행했어요.
+
+</details>
 
 </details>
 
 ---
 
-### UnJ (언제) `Web · Collab` w.claude
+### UnJ (언제) `Web · Collab · AI-assisted`
 > **"복잡한 약속 시간을 한눈에, 드래그 기반 일정 조율 플랫폼"**
+
+**왜 만들었나**: 여러 명이 가능한 시간을 맞추려면 채팅방에서 각자 되는 시간을 하나하나 대조해야 하는 번거로움이 있어서, 드래그 한 번으로 가능한 시간을 표시하고 겹치는 시간을 한눈에 볼 수 있는 플랫폼을 만들었어요.
 
 **핵심 경험**: 30분 단위 그리드 드래그 인터랙션을 통해 다수의 참여자가 가능한 시간을 시각적으로 집계
 
@@ -343,31 +395,71 @@
 ![화면 기록 2026-03-07 오후 4 59 27](https://github.com/user-attachments/assets/d5392223-9994-4707-a9ab-3a99336e2ce0)
 
 <details>
-<summary>엔지니어링 하이라이트</summary>
+<summary><h3>엔지니어링 하이라이트</h3></summary>
 
-* **Interactive Grid**: 마우스/터치 드래그 인덱스 계산 알고리즘을 통한 다중 슬롯 일괄 선택 구현
-* **Heatmap Logic**: 참여 인원 및 상태(가능/조정가능)에 따른 투명도/분할 그라데이션 동적 렌더링 로직 설계
-* **Optimization**: 500ms 디바운스 및 `sendBeacon`을 활용한 안정적인 가용시간 자동 저장 시스템 구축
+<details>
+<summary><h4>여러 칸을 한 번에 선택하는 드래그, 인덱스 계산부터 직접 짰어요</h4></summary>
+
+> 마우스/터치 드래그로 다중 슬롯을 일괄 선택하는 인터랙션을 인덱스 계산 알고리즘으로 직접 구현했어요.
+
+</details>
+
+<details>
+<summary><h4>참여 인원이 저마다 다른데, 한 화면에서 어떻게 다 보여줄지 고민했어요</h4></summary>
+
+> 참여 인원 수와 상태(가능/조정가능)에 따라 투명도와 분할 그라데이션이 동적으로 달라지는 히트맵 렌더링 로직을 설계했어요.
+
+</details>
+
+<details>
+<summary><h4>가용 시간을 매번 저장하면 안 될 것 같았어요</h4></summary>
+
+> **문제**: 드래그할 때마다 가용 시간을 바로 저장하면 요청이 너무 잦아지고, 사용자가 페이지를 벗어나는 순간 마지막 변경 사항이 저장되지 않고 씹힐 위험이 있었어요.
+
+> **해결**: 500ms 디바운스로 저장 요청 빈도를 줄이고, 페이지 이탈 시점의 저장은 `sendBeacon`으로 처리해 요청이 끊기지 않고 안정적으로 전송되게 했어요.
+
+</details>
 
 </details>
 
 ---
 
-### Last Chance `Game Dev`
+### Last Chance `Game Dev · Team`
 > **"유니티 2D 진영기반 뱀서 게임 구현"**
+
+**왜 만들었나**: 기존 뱀서라이크 장르와 차별화하기 위해, 진영 시스템과 AOS식 조작을 결합한 게임을 수업 팀 과제로 기획했어요.
 
 **핵심 경험**: 수업 팀 프로젝트로 4개월간 유니티로 게임을 제작
 
-**Plat Demo**: [게임 발표 자료](https://sejonguniversity-my.sharepoint.com/:p:/r/personal/23011810_sju_ac_kr/Documents/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%201.pptx?d=w478a9b0fe7564f9d8258998b7de3bc15&csf=1&web=1&e=B0O4xA) · [플레이 영상](https://drive.google.com/drive/folders/1x_EcGXgb-4HY_vahjJP4I5gNfEsXRbU4)
+**Demo**: [게임 발표 자료](https://sejonguniversity-my.sharepoint.com/:p:/r/personal/23011810_sju_ac_kr/Documents/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%201.pptx?d=w478a9b0fe7564f9d8258998b7de3bc15&csf=1&web=1&e=B0O4xA) · [플레이 영상](https://drive.google.com/drive/folders/1x_EcGXgb-4HY_vahjJP4I5gNfEsXRbU4)
 
 ![화면 기록 2026-03-09 오후 9 37 32](https://github.com/user-attachments/assets/dab7f1fc-d3a1-485e-ab0b-1dd4ed7e23c3)
 
 <details>
-<summary>엔지니어링 하이라이트</summary>
+<summary><h3>엔지니어링 하이라이트</h3></summary>
 
-* **독창적인 게임 시스템 설계**: 다른 게임들과의 차별성을 위한 뱀서라이크 + 진영시스템 + AOS식 플레이어 조작을 조화롭게 융합하여 새로운 게임 장르 융합
-* **Unity Tag**: 아군/상대진영을 tag 시스템으로 분류하여 기존의 로그라이크에 진영시스템 부여
-* **물리엔진 최적화**: 아군-200 + 1 vs 적군-200 x 3의 대규모 전투를 위한 (충돌·거리) 물리엔진, 렌더링 최적화
+<details>
+<summary><h4>뱀서라이크에 진영전을 얹으면 어떨까 싶었어요</h4></summary>
+
+> 다른 게임들과의 차별성을 위해 뱀서라이크 장르에 진영 시스템과 AOS식 플레이어 조작을 함께 녹여서 새로운 장르 조합을 시도했어요.
+
+</details>
+
+<details>
+<summary><h4>Tag 하나로 로그라이크에 없던 진영 개념을 만들었어요</h4></summary>
+
+> Unity의 Tag 시스템으로 아군/상대 진영을 분류해서, 기존 로그라이크 장르에 없던 진영전 개념을 부여했어요.
+
+</details>
+
+<details>
+<summary><h4>아군 201 vs 적군 600, 이 규모의 전투를 버티게 만들어야 했어요</h4></summary>
+
+> **문제**: 아군 200+1 대 적군 200×3 규모의 대규모 동시 전투에서 물리 충돌·거리 계산과 렌더링 부하가 감당하기 어려운 수준이었어요.
+
+> **해결**: 이 정도 물량의 동시 전투를 버틸 수 있게 물리 엔진의 충돌·거리 계산과 렌더링을 최적화했어요.
+
+</details>
 
 </details>
 
@@ -375,6 +467,8 @@
 
 ### self-driving (clone-coding) `ML · Simulation`
 > **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
+
+**왜 만들었나**: 머신러닝을 이론으로만 이해하고 넘어가는 대신, Canvas 2D 위에서 유전 알고리즘으로 자동차가 스스로 주행을 학습해가는 과정을 직접 구현하며 익히고 싶었어요.
 
 **핵심 경험**: JS로 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, FPS 업데이트 주기에 따른 실시간 비주얼 변경 요소 구현
 
@@ -387,25 +481,50 @@
 ### endCard `Web · Full-stack` (OCI + Docker로 배포)
 > **"에빙하우스의 망각 곡선에 따른 복습 시스템을 이용한 AI 예문기반 영단어 암기 웹사이트"**
 
+**왜 만들었나**: 영단어를 외워도 금방 잊어버리는 문제를, 에빙하우스 망각 곡선에 맞춰 복습 주기를 자동으로 잡아주고 AI가 그때그때 새 예문을 만들어주는 서비스로 풀어보고 싶었어요.
+
 **핵심 경험**: 기획부터 개발, 배포까지 처음으로 혼자 완주한 첫 개인 프로젝트
 
-**Plat Demo**: [사이트 보기](http://152.67.211.137:8001/)
+**Live Demo**: [사이트 보기](http://152.67.211.137:8001/)
 
 ![화면 기록 2026-03-20 오후 3 25 21](https://github.com/user-attachments/assets/410f2b11-f6c6-48fa-bcf3-9d90b0eb5849)
 
 <details>
-<summary>엔지니어링 하이라이트</summary>
+<summary><h3>엔지니어링 하이라이트</h3></summary>
 
-* **전체적인 설계 경험**: 처음으로 혼자 만들어본 첫 프로젝트이며, UI/UX 설계, 기술 선정, 사용자 플로우 등을 고려하고 배포까지 끝마친 프로젝트
-* **다양한 라이브러리 사용**: 당시 개발 지식과 경험이 없어서 도서관에서 책을 읽고 강의를 통해 배운 지식으로 EJS + JS, Express, MongoDB, CSS에 대해 알아가며 기능을 구현, AWS 배포까지 경험
-* **로그인 기능 구현**: session을 바탕으로 로그인 기능 구현
-* **Gemini API 활용**: API를 활용하여 프롬프트에 따른 예문을 호출
+<details>
+<summary><h4>기획부터 배포까지 혼자 완주한 첫 프로젝트예요</h4></summary>
+
+> UI/UX 설계, 기술 선정, 사용자 플로우까지 전부 혼자 고려하며 배포까지 끝마쳤어요.
+
+</details>
+
+<details>
+<summary><h4>책과 강의로 배워가며 스택을 하나씩 붙였어요</h4></summary>
+
+> 개발 지식과 경험이 없는 상태에서 도서관 책과 강의로 배워가며 EJS+JS, Express, MongoDB, CSS로 기능을 구현하고 AWS 배포까지 경험했어요.
+
+</details>
+
+<details>
+<summary><h4>세션 기반으로 로그인 기능을 직접 구현했어요</h4></summary>
+
+> session을 바탕으로 로그인 기능을 구현했어요.
+
+</details>
+
+<details>
+<summary><h4>Gemini API로 예문을 그때그때 생성하게 했어요</h4></summary>
+
+> Gemini API를 호출해 프롬프트 기반으로 단어 예문을 생성하게 했어요.
+
+</details>
 
 </details>
 
 ---
 
-### 🛣️ LoadMap
+### LoadMap
 
 * **ESP32 & Linux Server**: e-Ink 디스플레이를 활용한 개인용 대시보드 구축
   * (진행중) 맥북에 리눅스 서버를 구축하여 ESP로 Manna 웹 비주얼 렌더링 및 외부장비로 조작 구현 예정
