@@ -76,9 +76,9 @@
 <details>
 <summary><h4>화면이 갑자기 하얗게 죽어버렸는데, 범인은 유튜브였어요</h4></summary>
 
-> **문제**: YouTube IFrame API가 대상 DOM을 강제로 iframe으로 치환해, React fiber tree가 깨지는(`insertBefore` 에러) 크래시가 발생했어요.
+> **문제**: 찬양 릴스에 배경 음악을 재생하려고 YouTube IFrame API를 붙였는데, 처음엔 가장 자연스러운 방식대로 React가 렌더링한 `<div ref={containerRef}>`를 그대로 `new YT.Player()`의 타겟으로 넘겼어요. 그런데 이 API는 넘겨받은 타겟 DOM을 통째로 `<iframe>`으로 바꿔치기하는 부작용이 있었고, React의 가상 DOM은 여전히 `<div>`가 있다고 믿는데 실제 DOM은 `<iframe>`으로 바뀌어 있으니, 다음 리렌더링이나 언마운트 시점에 React가 자기가 그렸던 노드를 찾지 못하고 `insertBefore`/`removeChild` NotFoundError를 던지며 화면이 하얗게 죽었어요. 보통은 `react-youtube` 같은 래퍼 라이브러리 뒤에 가려져 잘 드러나지 않는, IFrame API를 직접 다룰 때만 마주치는 문제였어요.
 
-> **해결**: wrapper ref 하위에 React 관리 밖 자식 노드를 따로 둬서, React가 그 영역을 아예 건드리지 않게 만들었어요.
+> **해결**: "YouTube가 내가 렌더링한 DOM을 React 몰래 바꿔치기한다"는 원인을 짚어낸 뒤, 타겟 div를 아예 React 렌더링 흐름 밖에서 만드는 방식으로 바꿨어요. 순서는 이래요. 1) React는 빈 wrapper `<div ref={wrapperRef}>`만 렌더링하고 그 안에는 어떤 자식도 그리지 않아요. 2) 컴포넌트가 마운트되면 `wrapperRef.current`에 `document.createElement('div')` + `appendChild`로 자식 div를 직접 심어요 — JSX가 아니라 순수 DOM API 호출이라, React의 가상 DOM 트리에는 이 자식이 기록조차 되지 않아요. 3) `new YT.Player()`에는 이 수동 생성 div를 타겟으로 넘겨요. YouTube가 이걸 `<iframe>`으로 바꿔치기해도, React 입장에선 애초에 몰랐던 노드라 다음 리렌더링 때 비교할 "이전 상태"가 없으니 충돌이 날 수가 없어요. 4) 언마운트 시엔 React의 클린업이 wrapper를 지우기 전에, `while (wrapper.firstChild) wrapper.removeChild(wrapper.firstChild)`로 wrapper의 자식들을 먼저 수동으로 비워서, React가 마지막으로 기억하는 "wrapper는 비어있다"는 상태와 실제 DOM을 다시 맞춰놨어요. 레시피를 찾아 적용한 게 아니라 "React가 아예 모르는 영역을 의도적으로 만든다"는 원리부터 스스로 추론해 해결한 좋은 경험이였어요
 
 </details>
 
