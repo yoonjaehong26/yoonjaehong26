@@ -76,82 +76,82 @@
 <details>
 <summary><h4>iOS 시스템 제스처랑 충돌하던 스와이프, 라이브러리 없이 어떻게 잡았을까요?</h4></summary>
 
-iOS PWA(Standalone 모드)에서는 화면 좌측 엣지 40px 이내에서 시작하는 스와이프가 시스템 뒤로가기 제스처로 인식돼 앱의 커스텀 스와이프와 충돌했어요.
-
-`touchstart` 이벤트에서 터치 시작 좌표가 엣지 영역 안인지 확인해 `preventDefault()`로 시스템 제스처를 차단했어요. iOS에서 `preventDefault`가 실제로 먹히려면 리스너에 `{ passive: false }` 옵션이 필수라 이를 명시했어요.
-
-`navigator.standalone`과 `matchMedia('(display-mode: standalone)')`로 iOS PWA 여부를 감지해, 이 로직이 필요한 환경에서만 동작하도록 범위를 좁혔어요.
+> iOS PWA(Standalone 모드)에서는 화면 좌측 엣지 40px 이내에서 시작하는 스와이프가 시스템 뒤로가기 제스처로 인식돼 앱의 커스텀 스와이프와 충돌했어요.
+>
+> `touchstart` 이벤트에서 터치 시작 좌표가 엣지 영역 안인지 확인해 `preventDefault()`로 시스템 제스처를 차단했어요. iOS에서 `preventDefault`가 실제로 먹히려면 리스너에 `{ passive: false }` 옵션이 필수라 이를 명시했어요.
+>
+> `navigator.standalone`과 `matchMedia('(display-mode: standalone)')`로 iOS PWA 여부를 감지해, 이 로직이 필요한 환경에서만 동작하도록 범위를 좁혔어요.
 
 </details>
 
 <details>
 <summary><h4>번역본 5개, 언어도 여러 개인데 API 호출 수는 어떻게 줄였을까요?</h4></summary>
 
-큐레이션을 열 때마다 책 단위 JSON을 여러 번 dynamic import 하던 방식은 요청 3회·840KB 다운로드가 필요했어요.
-
-구절 UID 배열을 한 번에 받는 Batch API(`GET /api/verses?uids=...&version=...`)로 바꿔서 요청을 1회로 줄이고, 필요한 구절만 서버에서 추출해 응답하도록 했어요.
-
-그 결과 다운로드량이 300bytes(약 2,800배 감소), 응답 시간이 250ms → 50ms로 줄었어요. 번역본 5개(KRV, NKRV, KJV, YLT, WEB)와 여러 언어를 오가도 같은 구절은 하나의 전역 UID로 식별해서 캐시 키를 통일했어요.
+> 큐레이션을 열 때마다 책 단위 JSON을 여러 번 dynamic import 하던 방식은 요청 3회·840KB 다운로드가 필요했어요.
+>
+> 구절 UID 배열을 한 번에 받는 Batch API(`GET /api/verses?uids=...&version=...`)로 바꿔서 요청을 1회로 줄이고, 필요한 구절만 서버에서 추출해 응답하도록 했어요.
+>
+> 그 결과 다운로드량이 300bytes(약 2,800배 감소), 응답 시간이 250ms → 50ms로 줄었어요. 번역본 5개(KRV, NKRV, KJV, YLT, WEB)와 여러 언어를 오가도 같은 구절은 하나의 전역 UID로 식별해서 캐시 키를 통일했어요.
 
 </details>
 
 <details>
 <summary><h4>기능이 계속 늘어나도 안 얽히게, 미리 선을 그어둔 게 있어요</h4></summary>
 
-app · components · hooks · stores · services · types · constants · utils 8개 레이어로 책임을 분리했어요.
-
-도메인별 Zustand 스토어로 상태를 나눠, 기능이 늘어나도 레이어 간 의존성이 얽히지 않게 관리했어요.
+> app · components · hooks · stores · services · types · constants · utils 8개 레이어로 책임을 분리했어요.
+>
+> 도메인별 Zustand 스토어로 상태를 나눠, 기능이 늘어나도 레이어 간 의존성이 얽히지 않게 관리했어요.
 
 </details>
 
 <details>
 <summary><h4>1초 넘게 걸리던 첫 로딩, 30ms까지 줄인 방법은요</h4></summary>
 
-배포 플랫폼을 Netlify에서 Vercel로 옮기면서, 모든 콘텐츠를 처리하던 동적 라우트(`[[...slug]]`)에 `force-static`을 적용해 정적 생성으로 바꿨어요.
-
-Client Component 위주였던 페이지를 Server Component로 재구성해 CDN에서 정적으로 서빙되게 만들었어요.
-
-그 결과 TTFB가 1,134ms → 265ms → 약 30ms까지 단계적으로 줄었어요(최대 35배).
+> 배포 플랫폼을 Netlify에서 Vercel로 옮기면서, 모든 콘텐츠를 처리하던 동적 라우트(`[[...slug]]`)에 `force-static`을 적용해 정적 생성으로 바꿨어요.
+>
+> Client Component 위주였던 페이지를 Server Component로 재구성해 CDN에서 정적으로 서빙되게 만들었어요.
+>
+> 그 결과 TTFB가 1,134ms → 265ms → 약 30ms까지 단계적으로 줄었어요(최대 35배).
 
 </details>
 
 <details>
 <summary><h4>화면이 갑자기 하얗게 죽어버렸는데, 범인은 유튜브였어요</h4></summary>
 
-YouTube IFrame API가 대상 DOM을 강제로 iframe으로 치환해 React fiber tree가 깨지는(`insertBefore` 에러) 문제였어요.
-
-wrapper ref 하위에 React 관리 밖 자식 노드를 두는 방식으로, React가 그 영역을 아예 건드리지 않게 만들어 해결했어요.
+> YouTube IFrame API가 대상 DOM을 강제로 iframe으로 치환해 React fiber tree가 깨지는(`insertBefore` 에러) 문제였어요.
+>
+> wrapper ref 하위에 React 관리 밖 자식 노드를 두는 방식으로, React가 그 영역을 아예 건드리지 않게 만들어 해결했어요.
 
 </details>
 
 <details>
 <summary><h4>화면 전환할 때 깜빡임이 한 번도 없었던 이유, 사실 페이지 이동을 안 했어요</h4></summary>
 
-`ContentRouter` 컴포넌트가 홈/릴스/평독 3개 뷰를 전부 항상 마운트해두고, `view`/`back` URL 파라미터만으로 어떤 뷰를 보여줄지와 스마트 백내비게이션을 관리해요.
-
-라우트 이동 없이 파라미터만 바꾸는 방식이라 화면 깜빡임 없이 전환 시간 16ms를 달성했어요.
-
-다만 3개 뷰를 항상 메모리에 들고 있어야 하는 트레이드오프는 의도적으로 감수했어요.
+> `ContentRouter` 컴포넌트가 홈/릴스/평독 3개 뷰를 전부 항상 마운트해두고, `view`/`back` URL 파라미터만으로 어떤 뷰를 보여줄지와 스마트 백내비게이션을 관리해요.
+>
+> 라우트 이동 없이 파라미터만 바꾸는 방식이라 화면 깜빡임 없이 전환 시간 16ms를 달성했어요.
+>
+> 다만 3개 뷰를 항상 메모리에 들고 있어야 하는 트레이드오프는 의도적으로 감수했어요.
 
 </details>
 
 <details>
 <summary><h4>안드로이드는 왜 과감히 포기했을까요? 인스타그램도 같은 걸 겪었더라고요</h4></summary>
 
-Android의 시스템 제스처는 `preventDefault`로 막을 수 없는 시스템 레벨 동작이라는 걸 확인했어요.
-
-Instagram PWA도 같은 문제로 네이티브 앱으로 회귀했던 사례를 근거로, iOS 제스처 제어에 집중하는 전략을 의도적으로 택했어요.
+> Android의 시스템 제스처는 `preventDefault`로 막을 수 없는 시스템 레벨 동작이라는 걸 확인했어요.
+>
+> Instagram PWA도 같은 문제로 네이티브 앱으로 회귀했던 사례를 근거로, iOS 제스처 제어에 집중하는 전략을 의도적으로 택했어요.
 
 </details>
 
 <details>
 <summary><h4>노래 하나 재생했을 뿐인데 화면 4개가 같이 흔들렸다면?</h4></summary>
 
-`ContentRouter`가 구독하던 `audioStore`를 실제로 오디오 상태를 쓰는 `ReaderPanels`로 옮겼어요.
-
-오디오 재생 중 관련 없는 4개 뷰가 같이 리렌더되던 걸 막았고, `SettingsPanel`에 남아있던 불필요한 URL 훅도 제거했어요.
-
-그 결과 챕터 이동 시 27.6ms의 리렌더 시간을 줄였어요.
+> `ContentRouter`가 구독하던 `audioStore`를 실제로 오디오 상태를 쓰는 `ReaderPanels`로 옮겼어요.
+>
+> 오디오 재생 중 관련 없는 4개 뷰가 같이 리렌더되던 걸 막았고, `SettingsPanel`에 남아있던 불필요한 URL 훅도 제거했어요.
+>
+> 그 결과 챕터 이동 시 27.6ms의 리렌더 시간을 줄였어요.
 
 </details>
 
