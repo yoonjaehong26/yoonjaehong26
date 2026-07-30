@@ -52,119 +52,123 @@
 
 ---
 
-### 🔭 Currently Working on
+### 🔭 Featured Projects
 
 ---
 
-* **Bible Web App**: 성경 읽기 최적화 및 사용자 경험 개선 프로젝트
-
-###  Featured Project: Manna (만나)
+### Manna (만나) `Web · PWA`
 > **"성경 읽기의 진입 장벽을 낮춘 릴스 스타일 PWA"**
 
-* **핵심 경험**: 인스타그램 릴스처럼 **세로 스와이프**로 한 구절씩 음미하며 읽는 새로운 UX 제공
-* **엔지니어링 하이라이트**:
-  * **Zero-Lag 인터랙션**: 439줄의 순수 JS로 iOS Safari 시스템 제스처를 제어하여 네이티브 앱 수준의 조작감 구현
-  * **데이터 최적화**: 번역본/언어에 따른 전역 UID 시스템 적용 및 Batch API 구축으로 데이터 로딩 효율
-  * **아키텍처**: Feature-based 구조와 8개 도메인 스토어로 여러 상태를 체계적 관리
-* **Live Demo**: [https://manna-mu.vercel.app/](https://manna-mu.vercel.app/)
+**핵심 경험**: 인스타그램 릴스처럼 **세로 스와이프**로 한 구절씩 음미하며 읽는 새로운 UX 제공
+**Live Demo**: [https://manna-mu.vercel.app/](https://manna-mu.vercel.app/)
 
-![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
+![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
 
+<details>
+<summary>엔지니어링 하이라이트</summary>
 
+* **Zero-Lag 인터랙션**: 439줄의 순수 JS로 iOS Safari 시스템 제스처를 제어하여 네이티브 앱 수준의 조작감 구현
+* **데이터 최적화**: 번역본/언어에 따른 전역 UID 시스템 적용 및 Batch API 구축으로 데이터 로딩 효율
+* **아키텍처**: Feature-based 구조와 8개 도메인 스토어로 여러 상태를 체계적 관리
 
+</details>
 
+---
 
-
-
-###  doogoodoogoo(두구두구)![최근 30일 방문자](http://152.67.211.137:3000/badge?v=2)
+### doogoodoogoo(두구두구) `Web · Team` ![최근 30일 방문자](http://152.67.211.137:3000/badge?v=2)
 > **"세종대 일정 정리 및 ics를 통한 캘린더 일정등록 자동화 서비스"**
 
-* **핵심 경험**: 사용자경혐과 니즈를 고려하여 프론트 2명, 백앤드 3명과 함께 진행한 협동 프로젝트
-* **엔지니어링 하이라이트**:
-  * **기술보다는 사용자의 경혐 우선 개발**: 각 개발단계에서 사용자에게 필요한 니즈에 맞추어 개발을 진행하도록 노력(디자인, 레이아웃, ui)
-  * **체계화된 개발 과정 공개**: git flow전략과 함꼐 공개된 오픈소스 환경에서 중간 개발요소를 커밋단위로 문서화
-  * **팀활동**: swagger를 통한 api명세와 함께 프로젝트 아이디어 도출부터 베포까지 전 과정을 팀과 함꼐 개발
-* **Live Demo**: [https://doogoodoogoo.kr/](https://doogoodoogoo.kr/)
-  
-![화면 기록 2026-03-20 오후 3 45 59](https://github.com/user-attachments/assets/cd5c7f65-eec5-4568-b3d7-6837f53f56f2)
+**핵심 경험**: 사용자 경험과 니즈를 고려하여 프론트 2명, 백엔드 3명과 함께 진행한 협업 프로젝트
+**Live Demo**: [https://doogoodoogoo.kr/](https://doogoodoogoo.kr/)
 
+![화면 기록 2026-03-20 오후 3 45 59](https://github.com/user-attachments/assets/cd5c7f65-eec5-4568-b3d7-6837f53f56f2)
 
-//추가예정 그리디-미션: 숫자야구/매뉴판/뉴스뷰어/투두리스트 +그리디콘
+<details>
+<summary>엔지니어링 하이라이트</summary>
 
-###  Featured Project: UnJ (언제) w.claude
+* **기술보다는 사용자의 경험 우선 개발**: 각 개발단계에서 사용자에게 필요한 니즈에 맞추어 개발을 진행하도록 노력(디자인, 레이아웃, UI)
+* **체계화된 개발 과정 공개**: git flow 전략과 함께 공개된 오픈소스 환경에서 중간 개발요소를 커밋 단위로 문서화
+* **팀 활동**: swagger를 통한 API 명세와 함께 프로젝트 아이디어 도출부터 배포까지 전 과정을 팀과 함께 개발
+
+</details>
+
+---
+
+### UnJ (언제) `Web · Collab` w.claude
 > **"복잡한 약속 시간을 한눈에, 드래그 기반 일정 조율 플랫폼"**
 
-* **핵심 경험**: 30분 단위 그리드 드래그 인터랙션을 통해 다수의 참여자가 가능한 시간을 시각적으로 집계
-* **엔지니어링 하이라이트**:
-  * **Interactive Grid**: 마우스/터치 드래그 인덱스 계산 알고리즘을 통한 다중 슬롯 일괄 선택 구현
-  * **Heatmap Logic**: 참여 인원 및 상태(가능/조정가능)에 따른 투명도/분할 그라데이션 동적 렌더링 로직 설계
-  * **Optimization**: 500ms 디바운스 및 `sendBeacon`을 활용한 안정적인 가용시간 자동 저장 시스템 구축
-* **Live Demo**: [https://unj.kr/](https://unj.kr/)
-  
-![화면 기록 2026-03-07 오후 4 59 27](https://github.com/user-attachments/assets/d5392223-9994-4707-a9ab-3a99336e2ce0)
+**핵심 경험**: 30분 단위 그리드 드래그 인터랙션을 통해 다수의 참여자가 가능한 시간을 시각적으로 집계
+**Live Demo**: [https://unj.kr/](https://unj.kr/)
 
+![화면 기록 2026-03-07 오후 4 59 27](https://github.com/user-attachments/assets/d5392223-9994-4707-a9ab-3a99336e2ce0)
 
+<details>
+<summary>엔지니어링 하이라이트</summary>
 
+* **Interactive Grid**: 마우스/터치 드래그 인덱스 계산 알고리즘을 통한 다중 슬롯 일괄 선택 구현
+* **Heatmap Logic**: 참여 인원 및 상태(가능/조정가능)에 따른 투명도/분할 그라데이션 동적 렌더링 로직 설계
+* **Optimization**: 500ms 디바운스 및 `sendBeacon`을 활용한 안정적인 가용시간 자동 저장 시스템 구축
 
-###  Last Chance 
-> **"유니티 2d 진영기반 뱀서 게임 구현"**
+</details>
 
-* **핵심 경험**: 수업 팀 프로젝트로 4개월간 유니티로 게임을 제작
-* **엔지니어링 하이라이트**:
-  * **독창적인 게임 시스템 설계**: 다른게임들과의 차별성을 위한 뱀서라이크 + 진영시스템 + AOS식 플레이어조작을 조화롭게 융합하여 새로운 게임 장르 융합
-  * **unity Tag**: 아군/상대진영을 tag시스템으로 분류하여 기존의 로그라이크에 진영시스템 부여
-  * **물리엔진 최적화**: 아군-200 + 1 vs 적군-200 x 3 의 대규모 전투를 위한 (충돌,거리)물리엔진, 렌더링 최적화
-  * **Plat Demo**: [게임 발표 자료](https://sejonguniversity-my.sharepoint.com/:p:/r/personal/23011810_sju_ac_kr/Documents/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%201.pptx?d=w478a9b0fe7564f9d8258998b7de3bc15&csf=1&web=1&e=B0O4xA)
-* **Plat Demo**: [플레이 영상](https://drive.google.com/drive/folders/1x_EcGXgb-4HY_vahjJP4I5gNfEsXRbU4)
-  
-![화면 기록 2026-03-09 오후 9 37 32](https://github.com/user-attachments/assets/dab7f1fc-d3a1-485e-ab0b-1dd4ed7e23c3)
+---
 
+### Last Chance `Game Dev`
+> **"유니티 2D 진영기반 뱀서 게임 구현"**
 
+**핵심 경험**: 수업 팀 프로젝트로 4개월간 유니티로 게임을 제작
+**Plat Demo**: [게임 발표 자료](https://sejonguniversity-my.sharepoint.com/:p:/r/personal/23011810_sju_ac_kr/Documents/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%201.pptx?d=w478a9b0fe7564f9d8258998b7de3bc15&csf=1&web=1&e=B0O4xA) · [플레이 영상](https://drive.google.com/drive/folders/1x_EcGXgb-4HY_vahjJP4I5gNfEsXRbU4)
 
+![화면 기록 2026-03-09 오후 9 37 32](https://github.com/user-attachments/assets/dab7f1fc-d3a1-485e-ab0b-1dd4ed7e23c3)
 
+<details>
+<summary>엔지니어링 하이라이트</summary>
 
-### self-driving (clone-coding)
+* **독창적인 게임 시스템 설계**: 다른 게임들과의 차별성을 위한 뱀서라이크 + 진영시스템 + AOS식 플레이어 조작을 조화롭게 융합하여 새로운 게임 장르 융합
+* **Unity Tag**: 아군/상대진영을 tag 시스템으로 분류하여 기존의 로그라이크에 진영시스템 부여
+* **물리엔진 최적화**: 아군-200 + 1 vs 적군-200 x 3의 대규모 전투를 위한 (충돌·거리) 물리엔진, 렌더링 최적화
+
+</details>
+
+---
+
+### self-driving (clone-coding) `ML · Simulation`
 > **"Canvas 2D를 활용한 머신러닝-유전적알고리즘 자동차 구현"**
 
-* **핵심 경험**: js를 통하여 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, fps 업데이트 주기에에 따른 실시간 비쥬얼 변경 요소 구현
-* **Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/)
-  
-![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
+**핵심 경험**: JS로 머신러닝 구현, Canvas 2D를 활용하여 자동차 객체 및 배경 구현, FPS 업데이트 주기에 따른 실시간 비주얼 변경 요소 구현
+**Live Demo**: [https://resplendent-selkie-2e1e63.netlify.app/](https://resplendent-selkie-2e1e63.netlify.app/)
 
-
-
-
-
-###  endCard (oci + 도커로 베포된 상태)
-> **"에빙하우스의 망각 곡선에 따른 복습시스템을 이용한 ai 예제기반 영어단어 암기 웹사이트"**
-
-* **핵심 경험**: 
-* **엔지니어링 하이라이트**:
-  * **전체적인 설계경험**: 처음으로 혼자 만들어본 첫 프로젝트이며, ui/ux설계, 기술선정, 사용자플로우등을 고려하고 베포까지 끝마친 프로젝트
-  * **다양한 라이브러리 사용**: 당시 개발지식, 경혐이 없어서 도서관에서 책을 읽고 강의를 통해 배운 지식으로 esj + js, express, mongDB ,css에 대해 알아가며 기능을 구현 ,aws베포까지 경혐
-  * **로그인기능 구현**: session을 바탕으로 로그인 기능 구현 
-  * **gemini api활용**: api를 활용하여 프롬프트에 따른 예문을 호출
-  * **Plat Demo**: [(사이트 보기)]( http://152.67.211.137:8001/ )
-
-  ![화면 기록 2026-03-20 오후 3 25 21](https://github.com/user-attachments/assets/410f2b11-f6c6-48fa-bcf3-9d90b0eb5849)
-
-
-
-(문서 추가 예정)
----
-
-### 🛣️LoadMap
+![화면 기록 2026-03-07 오후 5 14 38](https://github.com/user-attachments/assets/959c9102-856c-4daf-83fd-2a6066e43cb1)
 
 ---
 
+### endCard `Web · Full-stack` (OCI + Docker로 배포)
+> **"에빙하우스의 망각 곡선에 따른 복습 시스템을 이용한 AI 예문기반 영단어 암기 웹사이트"**
 
+**핵심 경험**: 기획부터 개발, 배포까지 처음으로 혼자 완주한 첫 개인 프로젝트
+**Plat Demo**: [사이트 보기](http://152.67.211.137:8001/)
 
+![화면 기록 2026-03-20 오후 3 25 21](https://github.com/user-attachments/assets/410f2b11-f6c6-48fa-bcf3-9d90b0eb5849)
+
+<details>
+<summary>엔지니어링 하이라이트</summary>
+
+* **전체적인 설계 경험**: 처음으로 혼자 만들어본 첫 프로젝트이며, UI/UX 설계, 기술 선정, 사용자 플로우 등을 고려하고 배포까지 끝마친 프로젝트
+* **다양한 라이브러리 사용**: 당시 개발 지식과 경험이 없어서 도서관에서 책을 읽고 강의를 통해 배운 지식으로 EJS + JS, Express, MongoDB, CSS에 대해 알아가며 기능을 구현, AWS 배포까지 경험
+* **로그인 기능 구현**: session을 바탕으로 로그인 기능 구현
+* **Gemini API 활용**: API를 활용하여 프롬프트에 따른 예문을 호출
+
+</details>
+
+---
+
+### 🛣️ LoadMap
 
 * **ESP32 & Linux Server**: e-Ink 디스플레이를 활용한 개인용 대시보드 구축
-(진행중) 맥북에서 리녹스 서버를 구축하여 esp로 Manna웹 비쥬얼 렌더링 및 외부장비로 조작 구현예정
-최종적으로, 어느 디스플레이에서도 esp칩만 있으면 manna웹 갤러리처럼 구현할 예정
-=> 구현 완료 문서화중
+  * (진행중) 맥북에 리눅스 서버를 구축하여 ESP로 Manna 웹 비주얼 렌더링 및 외부장비로 조작 구현 예정
+  * 최종적으로, 어느 디스플레이에서도 ESP 칩만 있으면 Manna 웹 갤러리처럼 구현할 예정
+  * => 구현 완료, 문서화 중
 
-* **ESP32 & Linux Server & python **: 초음파 센서를 Lidar형태로 배치 후, 머신러닝 학습을 통하여 가위/바위/보 분석 시스템 구축
+* **ESP32 & Linux Server & Python**: 초음파 센서를 Lidar 형태로 배치 후, 머신러닝 학습을 통하여 가위바위보 분석 시스템 구축
 
- **ESP32 & Linux Server & python **: 가속도 센서를 활용하여 복싱 임펙트에 대하여 머신러닝 학습 및 임펙트 가이드 제공
+* **ESP32 & Linux Server & Python**: 가속도 센서를 활용하여 복싱 임팩트에 대하여 머신러닝 학습 및 임팩트 가이드 제공
