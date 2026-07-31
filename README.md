@@ -70,6 +70,11 @@
 
 ![화면 기록 2026-03-07 오후 4 28 44](https://github.com/user-attachments/assets/734310d0-a28c-4d1f-8d5b-7554c28eefac)
 
+**목표**
+* TWA(Trusted Web Activity)로 Google Play 스토어 출시
+* 개역개정 등 여러 번역본 저작권 사용 허가 요청 진행 중
+* 시작 가이드(온보딩) 추가 예정
+
 <details>
 <summary><h3>엔지니어링 하이라이트</h3></summary>
 
