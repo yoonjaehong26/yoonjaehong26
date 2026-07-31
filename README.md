@@ -1,3 +1,5 @@
+
+
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Software%20Engineer&fontSize=70" width="100%">
 </div>
@@ -901,11 +903,11 @@ https://github.com/user-attachments/assets/57eacdf3-e734-4b06-a765-a3b948b24826
 
 **Live Demo**: [자리잇수다](https://candid-paprenjak-4929c9.netlify.app/)
 
-
+https://github.com/user-attachments/assets/59cf6c3f-efbe-49c0-bac2-de4a6bac9a96
 
 <!-- 스크린샷/GIF 추가 예정 -->
 
-https://github.com/user-attachments/assets/959b4757-c93c-43a7-9a51-9c2cf829e1bb
+
 
 <details>
 <summary><h3>엔지니어링 하이라이트</h3></summary>
