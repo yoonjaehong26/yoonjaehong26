@@ -721,8 +721,8 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 **왜 만들었나**: Vampire Survivors식 자동전투와 대전 탄막, Splatoon의 잉크 지형을 섞은 게임을 만들어보고 싶어서 시작했고, 200일 넘게 이어온 다른 게임 프로젝트의 자매작으로 개발 중이에요. 플레이스토어 비공개 테스트까지 진행했어요.
 
-**Live Demo**: (배포 주소 추가 예정)
-
+**Live Demo**: [패턴메이커](https://woghd26.itch.io/bossmaker)
+=>실시간 버전으로 업데이트 필요해요!
 <!-- 스크린샷/GIF 추가 예정 -->
 
 <details>
@@ -760,12 +760,12 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 ---
 
-### smile_smile_smile (표정 릴레이 게임) `Web · PWA · Solo`
+### smile_smile_smile (하하하- 표정 릴레이 게임) `Web · PWA · Solo`
 > **"로그인 없이, 링크 하나로 이어지는 표정 따라하기 릴레이"**
 
 **왜 만들었나**: 앞사람의 표정을 웹캠으로 따라 하고, 그 결과를 다음 사람에게 링크로 넘기는 릴레이 게임을 만들어보고 싶어서 시작했어요.
 
-**Live Demo**: (배포 주소 추가 예정)
+**Live Demo**: [하하하](https://smile-smile-smile.vercel.app/)
 
 <!-- 스크린샷/GIF 추가 예정 -->
 
@@ -802,7 +802,7 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 **왜 만들었나**: 원래는 실시간 멀티유저 협업 게임으로 시작했는데, 안정성과 단순함을 위해 협업 기능을 걷어내고 손 제스처로 그림을 그리는 핵심 경험에만 집중하기로 스코프를 다시 잡았어요.
 
-**Live Demo**: (배포 주소 추가 예정)
+**Live Demo**: [싹!](https://ssac-1.netlify.app/)
 
 <!-- 스크린샷/GIF 추가 예정 -->
 
@@ -846,8 +846,8 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 **왜 만들었나**: 통제된 AI 에이전트를 활용해 학생이 문제를 푸는 과정 자체를 평가하고 싶어서 만들었어요. 처음엔 알고리즘 문제를 자동 채점하는 방식으로 시작했다가, 실제 웹 개발 과제를 브라우저 안에서 직접 실행하고 AI가 루브릭으로 채점하는 방식으로 아키텍처를 통째로 바꿨어요.
 
-**Live Demo**: (배포 주소 추가 예정)
-
+**Live Demo**: [despy](https://despy-1.netlify.app/)
+**주의 : 헤커톤 이후 백앤드 닫힌 상태입니다.
 <!-- 스크린샷/GIF 추가 예정 -->
 
 <details>
@@ -934,7 +934,8 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 **왜 만들었나**: AI와 어느 정도 대화를 나누고 나면 그동안의 맥락이 사라질까봐 새 채팅을 못 열게 되는 개인적인 답답함에서 출발해, 이야기를 통해 감정을 나누는 챗봇과 여러 명이 참여하는 AI 토론방으로 발전시켰어요.
 
-**Live Demo**: (배포 주소 추가 예정)
+**Live Demo**: [storia.kr](https://storia.kr/)
+render로 베포해서 로그인 시 콜드스타트되는 이슈가 있습니다.
 
 <!-- 스크린샷/GIF 추가 예정 -->
 
@@ -978,7 +979,7 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 **왜 만들었나**: 세종대 학생들이 만든 사이드 프로젝트를 URL 하나로 등록하고, 인스타그램처럼 피드를 넘기며 실제로 체험하고 평가할 수 있는 서비스를 만들고 싶어서 시작했어요.
 
-**Live Demo**: (배포 주소 추가 예정)
+**Live Demo**: [모아](https://moa-moa.netlify.app/)
 
 <!-- 스크린샷/GIF 추가 예정 -->
 
