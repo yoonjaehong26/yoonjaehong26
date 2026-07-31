@@ -298,6 +298,10 @@
 ### react-render-board `Open Source · Dev Tool`
 > **"React 앱의 실시간 렌더 구조를 한눈에 보여주는 오픈소스 개발자 도구"**
 
+
+
+
+
 **왜 만들었나**: 기존 React DevTools는 목록 형태라 전체 구조가 한눈에 안 들어오고, 다른 시각화 도구들은 실제 화면 구조 대신 파일 import 관계만 보여줘서 실제와 다르게 그려져요. "지금 실제로 화면에 그려지고 있는 구조"를 그대로 보여주는 도구가 없다는 걸 발견하고 직접 만들었어요.
 
 **핵심 경험**: 리서치·설계·구현 전 과정을 75개의 의사결정 기록(ADR)으로 남기며 진행했고, npm에 실제로 배포해 누구나 설치할 수 있는 오픈소스 라이브러리로 완성했어요. 유닛 테스트 346개, 실제 오픈소스 앱 3개(excalidraw 등)로 성능 검증까지 마쳤어요.
@@ -305,6 +309,11 @@
 [![npm version](https://img.shields.io/npm/v/react-render-board.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-render-board) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yoonjaehong26/react-render-board)
 
 <!-- 스크린샷·데모 영상 추가 예정 -->
+**Live Demo**: [바로! 체험해보기](https://guileless-pika-2b8bc5.netlify.app/)
+
+https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
+
+
 
 <details>
 <summary><h3>엔지니어링 하이라이트</h3></summary>
