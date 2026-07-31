@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Software%20Engineer&fontSize=70" width="100%">
 </div>
@@ -19,9 +12,7 @@
 
 ### Tech Stack
 * **Frontend**: Next.js · React · Vite · TypeScript
-* **Styling**: styled-components
-* **State/Data**: Zustand · TanStack Query
-* **Backend/DB**: Express · MongoDB · Socket.IO
+* **Backend/DB**: Express · MongoDB 
 * **Languages**: JavaScript · Python · C++ · C#
 * **Tools**: Git · Netlify · Unity · Ubuntu
 
