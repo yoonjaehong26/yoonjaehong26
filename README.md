@@ -491,6 +491,10 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 <details>
 <summary><h4>선이 겹치지 않게, 길찾기 알고리즘을 직접 짰어요</h4></summary>
 
+
+https://github.com/user-attachments/assets/8de0af31-77d0-4b4e-bd31-2488176f8a92
+
+
 > **문제**: 같은 그룹 안 부모-자식 선은 트리 배치 덕분에 자연스럽게 깔끔했지만, 그룹 경계를 넘나드는 선은 문제였어요. 컴포넌트 15개 정도의 단순한 데모에서는 눈에 안 띄었는데, 실제 큰 프로젝트(그룹 수십~수백 개)를 그려보니 이 경계를 넘는 선들이 다른 그룹의 박스를 그대로 뚫고 지나가는 경우가 흔했어요. 데모만 보고 "이 정도면 괜찮다"고 넘어갔다면 발견하지 못했을 문제였죠.
 
 > **해결**: 기존 라이브러리(예: libavoid)를 그대로 가져다 쓰는 대신, 우리 화면 좌표만으로 동작하는 길찾기 알고리즘을 직접 짰어요. 선의 시작점·끝점·모든 박스의 모서리 좌표들로 격자를 만들고, 그 격자 선을 따라 박스를 피해가면서 "가장 짧고 덜 꺾이는" 경로를 A* 알고리즘으로 탐색하는 방식이에요. 처음 짠 버전은 간단한 우회 경로 몇 가지만 시도하다 안 풀리면 결국 그냥 관통하는 방식으로 물러섰는데, 격자+A* 방식으로 바꾸면서 우회로가 존재하기만 하면 반드시 찾아내도록 만들었어요. 또 선이 항상 자기 그룹 박스 밖으로 빠져나온 뒤에야 꺾이도록 하고, 같은 출발 그룹의 선들은 같은 통로를, 다른 출발 그룹의 선들은 서로 다른 통로를 쓰도록 분리해서 통로 안에서 선끼리 겹치는 것도 줄였어요.
@@ -723,7 +727,27 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 **Live Demo**: [패턴메이커](https://woghd26.itch.io/bossmaker)
 =>실시간 버전으로 업데이트 필요해요!
-<!-- 스크린샷/GIF 추가 예정 -->
+
+
+https://github.com/user-attachments/assets/d8000366-fe34-4335-b25d-3cec73c05ca2
+
+
+
+https://github.com/user-attachments/assets/047bf2f1-c725-4351-8f0a-638116fda64f
+
+
+
+https://github.com/user-attachments/assets/57eacdf3-e734-4b06-a765-a3b948b24826
+
+
+
+https://github.com/user-attachments/assets/ba65c1b0-0b3e-4be5-a180-3ed866697c2b
+
+
+
+https://github.com/user-attachments/assets/bcffa3e4-68e5-4919-a6c0-cd582ced60eb
+
+
 
 <details>
 <summary><h3>엔지니어링 하이라이트</h3></summary>
@@ -890,7 +914,9 @@ https://github.com/user-attachments/assets/895df882-2aef-436d-9dac-2c5eee707181
 
 **왜 만들었나**: 제주의 실제 교통·주차 문제를 다루는 아이디어톤에 참가해, 정책 발제 자료부터 준비하고 3일 만에 실제로 동작하는 MVP까지 만들었어요.
 
-**Live Demo**: (배포 주소 추가 예정)
+**Live Demo**: [자리잇수다](https://candid-paprenjak-4929c9.netlify.app/)
+
+
 
 <!-- 스크린샷/GIF 추가 예정 -->
 
