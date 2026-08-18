@@ -511,7 +511,7 @@ https://github.com/user-attachments/assets/8de0af31-77d0-4b4e-bd31-2488176f8a92
 
 **왜 만들었나**: 세종대 학생들이 만든 사이드 프로젝트를 URL 하나로 등록하고, 인스타그램처럼 피드를 넘기며 실제로 체험하고 평가할 수 있는 서비스를 만들고 싶어서 시작했어요.
 
-**Live Demo**: [모아](https://moa-moa.netlify.app/)
+**Live Demo**: [모아](https://moa-site.vercel.app/)
 
 <!-- 스크린샷/GIF 추가 예정 -->
 
